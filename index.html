@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Glazbeni player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎵 Glazbeni player</h1>
+    <audio id="audio" style="display: none;"></audio>
+
+    <!-- Prikaz vremena -->
+    <div class="time-display">
+      <span id="current-time">0:00</span> / 
+      <span id="duration">0:00</span>
+    </div>
+    <input type="range" id="progress" min="0" max="100" value="0" class="progress-bar">
+    <ul class="playlist" id="playlist"></ul>
+
+    <div class="controls">
+      <button id="prev">⏮️</button>
+      <button id="play">▶️</button>
+      <button id="pause">⏸️</button>
+      <button id="stop">⏹️</button>
+      <button id="next">⏭️</button>
+    </div>
+    <ul class="playlist" id="playlist">
+          <li><a href="#" data-src="Muzika/Baby Lasagna- Rim Tim Tagi Dim (Official Video).mp3">1. Rim Tim Tagi Dim</a></li>
+          <li><a href="#" data-src="Muzika/BARBARA BOBAK - LAZES ME LJUBAVI (OFFICIAL VIDEO).mp3">2. LAZES ME LJUBAVI</a></li>
+          <li><a href="#" data-src="Muzika/Bella Ciao by Delia Tribute to La Casa de Papel.mp3">3. Bella Ciao</a></li>
+          <li><a href="#" data-src="Muzika/BRESKVICA - KUME MOJ (OFFICIAL VIDEO).mp3">4. KUME MOJ</a></li>
+          <li><a href="#" data-src="Muzika/DARKO LAZIC FEAT. ZERA - PREZIME (OFFICIAL VIDEO).mp3">5. PREZIME</a></li>
+          <li><a href="#" data-src="Muzika/Dino Merlin - Nešto lijepo treba da se desi i Danas sam OK (Koševo 2008).mp3">6. Nešto lijepo treba da se desi i Danas sam OK</a></li>
+          <li><a href="#" data-src="Muzika/Dino Merlin - Sredinom (Beograd 2011).mp3">7. Sredinom</a></li>
+          <li><a href="#" data-src="Muzika/Dino Merlin & Željko Joksimović - Supermen (Beograd 2011).mp3">8. Supermen</a></li>
+          <li><a href="#" data-src="Muzika/Dj Adel - Cik Cik Pogodi Remix 2005.mp3">9. Cik Cik Pogodi</a></li>
+          <li><a href="#" data-src="Muzika/JUSUF & BARBARA - DOBRO JUTRO MOJA VOLJENA(cover) STUDIO DALAS 2021.mp3">10. DOBRO JUTRO MOJA VOLJENA</a></li>
+          <li><a href="#" data-src="Muzika/LUNA - Seceru - (Official Video 2005).mp3">11. Seceru</a></li>
+          <li><a href="#" data-src="Muzika/MC STOJAN - SALJI BROJ (OFFICIAL VIDEO).mp3">12. SALJI BROJ</a></li>
+          <li><a href="#" data-src="Muzika/MC STOJAN X ANASTASIJA - OTKAZ (OFFICIAL VIDEO).mp3">13. OTKAZ</a></li>
+          <li><a href="#" data-src="Muzika/MC STOJAN x BRESKVICA - ZIVOT SI MOJ (OFFICIAL VIDEO).mp3">14. ZIVOT SI MOJ</a></li>
+          <li><a href="#" data-src="Muzika/MINISTARKE - BOING 747 (OFFICIAL VIDEO 2015).mp3">15. BOING 747</a></li>
+          <li><a href="#" data-src="Muzika/Nervozni postar Cirkus Kolorado - ( Narodni Hitovi Nek ljubav traje PB ).mp3">16. Cirkus Kolorado</a></li>
+          <li><a href="#" data-src="Muzika/NUCCI - RAJSKE KISE (OFFICIAL VIDEO) Prod. by Jhinsen.mp3">17. RAJSKE KISE</a></li>
+          <li><a href="#" data-src="Muzika/Sanja Vučić x Nucci - Ruzmarin (Official Video Album Remek-Delo).mp3">18. Ruzmarin</a></li> 
+          <li><a href="#" data-src="Muzika/SEVERINA X AZIS - FALIŠ MI.mp3">19. FALIŠ MI</a></li>
+          <li><a href="#" data-src="Muzika/SEVERINA X NUCCI - METAK, OFFICIAL VIDEO.mp3">20. METAK</a></li>
+          <li><a href="#" data-src="Muzika/Siniša Vuco & Halid Bešlić - Dragi Bože (Official video).mp3">21. Dragi Bože</a></li>
+          <li><a href="#" data-src="Muzika/SLOBA RADANOVIC X BRESKVICA & DEJAN PETROVIC - OLOVO (OFFICIAL VIDEO).mp3">22. OLOVO</a></li>
+          <li><a href="#" data-src="Muzika/Toše Proeski - Igra bez granica (OFFICIAL VIDEO).mp3">23. Igra bez granica</a></li>
+          <li><a href="#" data-src="Muzika/VALENTINO - Pile Moje (Official Video).mp3">24. Pile Moje</a></li>
+          <li><a href="#" data-src="Muzika/Zlatko Pejaković - Čerge (Official lyric video).mp3">25. Čerge</a></li>
+      </li>    
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

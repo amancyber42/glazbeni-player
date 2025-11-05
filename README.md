@@ -36,5 +36,3 @@ Nema potrebe za kompleksnom instalacijom. Player je dizajniran za lokalno pokret
 ### 1. Struktura Datoteka
 
 Obavezno je da se glazbene datoteke nalaze u mapi `Muzika/`, točno kako je definirano u HTML kodu:
-
-![Izgled glazbenog playera](image.png)

@@ -37,4 +37,4 @@ Nema potrebe za kompleksnom instalacijom. Player je dizajniran za lokalno pokret
 
 Obavezno je da se glazbene datoteke nalaze u mapi `Muzika/`, točno kako je definirano u HTML kodu:
 
-![muzički player](muzički player.png)
+![Izgled glazbenog playera](image.png)
